@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;700&display=swap');
+:root{
+    --primary-color: hsl(257, 40%, 49%)
+}
+body{
+    background-image: url("images/bg-desktop.svg");
+    background-color: var(--primary-color);
+    font-family: "Open Sans", sans-serif;
+    background-position: center center;
+}
+.container{
+   
+    display: flex;
+    min-height: 100vh;
+}
+.container-left{
+    width: 60%;
+}
+.logo{
+    position:absolute;
+    margin-top: 20px;
+}
+.bg-image{
+    background-image: url(images/illustration-mockups.svg);
+    width: 700px;
+    height: 500px;
+    background-position: centre centre;
+    margin-top: 120px;
+    margin-left: auto;
+}
+.container-right{
+    width: 40%;
+    padding-top: 100px;
+    padding-left: 50px;
+    text-align: left;
+    margin-left: 5px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    line-height: 3rem;
+    color: white;
+    width: 400px;
+    display: block;
+}
+p{
+    opacity: 0.8;
+    line-height: 2rem;
+    color: white;
+    width: 400px;
+    display: block;
+    /* transform: translateX(100%);
+    animation: leftcomin 2s linear forwards; */
+}
+/* @keyframes leftcomin{
+    to{
+        transform: translateX(0%);
+    }
+} */
+button{
+    border-radius: 50px;
+    box-shadow: cornsilk;
+    padding: 15px 40px 15px 40px;
+    color: var(--primary-color);
+    opacity: 0.7;
+    position: absolute;
+    margin-top: 30px;
+    /* padding-right: 50px; */
+    /* margin-left: 100px; */
+    /* transform: translateX(100%);
+    animation: rightcomin 2s linear backwards; */
+}
+/* @keyframes rightcomin{
+    to{
+        transform: translateX(0%);
+    }
+} */
+button:hover{
+   background-color: cyan;
+}
+.icon{
+    font-size: 30px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    opacity: 0.5;
+}
+i{
+    border-radius: 50%;
+    color: white;
+}
+
+.illu-mobi{
+    display: none;
+}
+
+ @media screen and (max-width: 575px){
+    .logo{
+        margin-top: -100px;}
+    .illu-mobi{
+        display: block;
+    }
+    .container{
+        display: block;
+        text-align: center center;
+    }
+    /* .container-right{
+        width: 100%;
+    } */
+    .container-main{
+        display: block;
+        text-align: center;
+        padding-left: 100px;
+        margin-bottom: 50px;
+    }
+    button{
+        position:absolute;
+        margin-left: 80px;
+    }
+    .icon{
+        margin-left: 150px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+}
+    
